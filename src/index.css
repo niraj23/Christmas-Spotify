@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#home-container {
+  background: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 800px;
+  position: relative;
+  z-index: 1;
+  }
+  
+  #home-bg {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  }
+  
+  #home-video {
+  height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  #title-container {
+  z-index: 3;
+  max-width: 1200px;
+  position: fixed;
+  padding: 8px 24px;
+  align-items: center;
+  }
+  /* NAV */
+  
+  .rs-navbar-default {
+  background-color: transparent;
+  }
+  
+  
+  #nav-container {
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: fixed;
+  }
+
+#home-title {
+  font-family: 'Lobster', cursive;
+  color: red;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 42px #0fa,
+    0 0 12px #0fa,
+    0 0 11px #0fa;
+}
+
+.rs-navbar-item {
+  font-family: 'Lobster', cursive;
+  font-size: 20px;
+}
+
+#devs {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
