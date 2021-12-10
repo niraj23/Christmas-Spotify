@@ -41,13 +41,14 @@ class Playlist extends React.Component {
 export default Playlist;
 
 const TitleContainer = styled.div`
-    h2{
+    h1{
         text-align: center;
         font-size: 4rem;
-        font-family: 'Permanent Marker', cursive;
+        font-family: 'Poiret One', cursive;
         background: -webkit-linear-gradient(#0058fc, #94b9ff);
         -webkit-background-clip: text;
-        -webkit-text-fill-color: red;
+        -webkit-text-fill-color: green;
         padding-bottom: 20px;
+        text-shadow: 2px 2px 4px  #fff;
     }
 `

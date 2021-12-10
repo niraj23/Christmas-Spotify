@@ -34,7 +34,7 @@ return (
     )}
     </Nav>
     <Nav pullRight>
-      <Nav.Item id='devs' as={NavLink} to="/devs" icon={<FaCodeIcon /> } size="2em" style={{ color: '#61dafb' }}>Devs</Nav.Item>
+      <Nav.Item as={NavLink} to="/dev" icon={<FaCodeIcon /> } size="2em" style={{ color: '#61dafb' }}>Devs</Nav.Item>
     </Nav>
   </Navbar>
 );

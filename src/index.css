@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -15,7 +18,7 @@ code {
   position: relative;
   z-index: 1;
   }
-  
+
   #home-bg {
   position: relative;
   top: 0;
@@ -26,7 +29,7 @@ code {
   height: 100%;
   overflow: hidden;
   }
-  
+
   #home-video {
   height: 100vh;
     width: 100vw;
@@ -46,12 +49,12 @@ code {
   align-items: center;
   }
   /* NAV */
-  
+
   .rs-navbar-default {
   background-color: transparent;
   }
-  
-  
+
+
   #nav-container {
     width: 100%;
     height: 50px;
@@ -80,4 +83,16 @@ code {
 
 #devs {
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+.new-user-form {
+  background-color: #303859;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  padding: 10px;
+  border-radius: 5%;
+  color: white;
+  min-width: 250px;
 }

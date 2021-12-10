@@ -7,7 +7,7 @@
     margin: 20px;
     font-family: 'Poiret One', cursive;
     padding:20px;
-    min-width: 320px;
+    max-width: 250px;
     background-color:rgba(0, 0, 0, 0.7);
     text-align: center;
     display: inline;
@@ -28,6 +28,7 @@ img {
 .meet{
     font-family: 'Poiret One', cursive;
     font-size: 70px;
+    font-weight: bold;
     padding-top: 120px;
     color: rgb(1, 192, 42);
     text-shadow: 2px 2px 4px  #808080;
@@ -80,6 +81,16 @@ img {
     font-size: calc(10px + 2vmin);
     color: white;
     float:left;
-    
+    background-color: transparent;
 }
 
+.dev-container {
+    min-height: 50vh;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-color: transparent;
+}

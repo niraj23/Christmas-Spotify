@@ -32,12 +32,10 @@ const TitleContainer = styled.div`
     h2{
         text-align: center;
         font-size: 4rem;
-        font-family: 'Permanent Marker', cursive;
+        font-family: 'Poiret One', cursive;
         background: -webkit-linear-gradient(#0058fc, #94b9ff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: red;
         padding-bottom: 20px;
     }
 `
-
-

@@ -6,7 +6,6 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 function DevCard({name, about, image, linkedIn, github}) {
     return (
-        <>
         <header className="App-header">
         <div className="dev-card">
             <section className="image">
@@ -17,7 +16,7 @@ function DevCard({name, about, image, linkedIn, github}) {
             </section>
             <p className='soft'>Software Engineer</p>
             <section className="about">
-                <p>{about}</p>
+                <p style={{fontSize: 'small'}}>{about}</p>
             </section>
             <section className="contact">
                 <FontAwesomeIcon icon={faLinkedin} /><a className='linkedIn' target='_blank' rel="noopener noreferrer" href={linkedIn}>LinkedIn</a> <br></br>
@@ -25,7 +24,6 @@ function DevCard({name, about, image, linkedIn, github}) {
             </section>
         </div>
         </header>
-        </>
     )
 }
 

@@ -34,7 +34,7 @@ class UserProfile extends React.Component {
       <div>
          <video id="home-video" autoPlay loop muted src={Video} type='video/mp4'>
         </video>
-        <TitleContainer>
+        <TitleContainer style={{marginTop: '200px'}}>
         <h1>Welcome Back {this.props.userInfo.name}</h1>
         <p>Name: {this.props.userInfo.name}</p>
         <p>Username: {this.props.userInfo.username}</p>
@@ -60,10 +60,22 @@ const TitleContainer = styled.div`
     h1{
         text-align: center;
         font-size: 4rem;
-        font-family: 'Permanent Marker', cursive;
+        font-family: 'Poiret One', cursive;
         background: -webkit-linear-gradient(#0058fc, #94b9ff);
         -webkit-background-clip: text;
         -webkit-text-fill-color: red;
         padding-bottom: 20px;
+        text-shadow: 2px 2px 4px  #fff;
+    }
+    p{
+      text-align: center;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        font-family: 'Poiret One', cursive;
+        background: -webkit-linear-gradient(#0058fc, #94b9ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: white;
+        padding-bottom: 20px;
+        text-shadow: 1px 1px 2px  red;
     }
 `

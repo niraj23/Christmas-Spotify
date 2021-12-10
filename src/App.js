@@ -411,15 +411,17 @@ class App extends Component {
           />
 
         <Route
+          path="/dev"
+          render={()=> (
+            <Dev
+              />
+            )}
+            />
+
+        <Route
           path="/"
           component={Home}
           />
-        
-        <Route 
-        path="/devs" 
-         component={Dev} 
-        /> 
-
 
       </Switch>
       </div>

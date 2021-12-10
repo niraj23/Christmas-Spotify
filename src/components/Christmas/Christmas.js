@@ -67,5 +67,3 @@ const CardList = styled.div`
       box-shadow: 0 0 22.5px green;
     }
 `
-
-
