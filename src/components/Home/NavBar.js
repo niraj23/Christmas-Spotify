@@ -10,8 +10,8 @@ import {
 const NavBar = (props) => {
 return (
   <Navbar style={{background: '#09070d'}}>
-    <Navbar.Brand style={{ color: 'white'}}>
-      Christmas Spotify
+    <Navbar.Brand style={{fontSize: '40px', marginTop: '-10px'}}>
+      🎄
     </Navbar.Brand>
     <Nav>
     {props.login ? (
@@ -26,7 +26,7 @@ return (
       </div>
   ) : (
     <div className="sideBar">
-      <Nav.Item as={NavLink} to="/home" style={{ color: 'white'}}>Home</Nav.Item>
+      <Nav.Item as={NavLink} to="/home" icon={<FaHomeIcon />}size="2em" style={{ color: '#61dafb'}}>Home</Nav.Item>
       <Nav.Item as={NavLink} to="/login"style={{ color: 'white' }}>Login</Nav.Item>
       <Nav.Item as={NavLink} to="/signup"style={{ color: 'white' }}>Signup</Nav.Item>
       <h1 id='home-title' style={{paddingLeft: '407px'}}>Christmas Spotify</h1>
