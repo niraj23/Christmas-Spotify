@@ -44,7 +44,7 @@ class App extends Component {
 
   getTopHits(){
     //change address depending on port
-    fetch('http://localhost:3001/api/v1/tracks/top_100', {
+    fetch('https://christmas-spotify.herokuapp.com/api/v1/tracks/top_100', {
       headers: {
         Authorization: localStorage.getItem("token")
       }
@@ -61,7 +61,7 @@ class App extends Component {
 
   getChristmas(){
     //change address depending on port
-    fetch('http://localhost:3001/api/v1/tracks/random', {
+    fetch('https://christmas-spotify.herokuapp.com/api/v1/tracks/random', {
       headers: {
         Authorization: localStorage.getItem("token")}
       })
@@ -77,7 +77,7 @@ class App extends Component {
   }
 
   getUserList(){
-    fetch('http://localhost:3001/api/v1/users')
+    fetch('https://christmas-spotify.herokuapp.com/api/v1/users')
       .then(res=>res.json())
       .then(data=> {
         this.setState({
@@ -87,7 +87,7 @@ class App extends Component {
   }
 
   getTracks = () => {
-    fetch('http://localhost:3001/api/v1/tracks', {
+    fetch('https://christmas-spotify.herokuapp.com/api/v1/tracks', {
       headers: {
         Authorization: localStorage.getItem("token")
       }
@@ -100,7 +100,7 @@ class App extends Component {
   }
 
   loginSubmitHandler = (userInfo) => {
-    fetch('http://localhost:3001/api/v1/login', {
+    fetch('https://christmas-spotify.herokuapp.com/api/v1/login', {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
@@ -130,7 +130,7 @@ class App extends Component {
     newUserSubmitHandler = (event, userInfo) => {
       event.preventDefault()
       let token = localStorage.getItem("token")
-      fetch('http://localhost:3001/api/v1/users', {
+      fetch('https://christmas-spotify.herokuapp.com/api/v1/users', {
        method: "POST",
        headers: {
          "Content-Type": "application/json",
@@ -171,7 +171,7 @@ class App extends Component {
 
     submitPlaylistHandler= (e, playlistId, track, spotifyId) => {
       e.preventDefault()
-      fetch(`http://localhost:3001/api/v1/playlist_tracks`, {
+      fetch(`https://christmas-spotify.herokuapp.com/api/v1/playlist_tracks`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -204,7 +204,7 @@ class App extends Component {
     }
 
     getPlaylist = (id) => {
-      fetch(`http://localhost:3001/api/v1/users/${id}/playlists`, {
+      fetch(`https://christmas-spotify.herokuapp.com/api/v1/users/${id}/playlists`, {
         headers: {
           Authorization: localStorage.getItem("token")
         }
@@ -219,7 +219,7 @@ class App extends Component {
     }
 
     getPlaylistTracks = () => {
-      fetch(`http://localhost:3001/api/v1/playlist_tracks`, {
+      fetch(`https://christmas-spotify.herokuapp.com/api/v1/playlist_tracks`, {
         headers: {
           Authorization: localStorage.getItem("token")
         }
@@ -237,7 +237,7 @@ class App extends Component {
       e.preventDefault()
       let id = this.state.user.id
       console.log(id);
-      fetch(`http://localhost:3001/api/v1/users/${id}`, {
+      fetch(`https://christmas-spotify.herokuapp.com/api/v1/users/${id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -254,7 +254,7 @@ class App extends Component {
 
     deleteUser = () => {
       let id = this.state.user.id
-        fetch(`http://localhost:3001/api/v1/users/${id}`, {
+        fetch(`https://christmas-spotify.herokuapp.com/api/v1/users/${id}`, {
           method: "DELETE",
           headers: {
             Authorization: localStorage.getItem("token")
@@ -264,7 +264,7 @@ class App extends Component {
 
     fetchSearchedSongs = (query) => {
       this.setState({loading: true})
-      fetch(`http://localhost:3001/api/v1/tracks/search?q=${query}`, {
+      fetch(`https://christmas-spotify.herokuapp.com/api/v1/tracks/search?q=${query}`, {
         method: "GET",
         headers: {
           Authorization: localStorage.getItem("token")
@@ -282,7 +282,7 @@ class App extends Component {
     createNewPlaylist = (e, playlist) => {
       e.preventDefault()
       //console.log(playlist)
-      fetch(`http://localhost:3001/api/v1/users/${playlist.userId}/playlists`, {
+      fetch(`https://christmas-spotify.herokuapp.com/api/v1/users/${playlist.userId}/playlists`, {
        method: "POST",
        headers: {
          "Content-Type": "application/json",
